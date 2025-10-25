@@ -29,4 +29,34 @@ public class Clickable : MonoBehaviour
         animator.SetTrigger("Die");
     }
 
+    /// <summary>
+    /// Called at the end of the Death animation (via Animation Event)
+    /// </summary>
+    public void OnDeathAnimationEnd()
+    {
+        Debug.Log("Death animation finished!");
+
+        // Hide the bat
+        gameObject.SetActive(false);
+
+        // Respawn after a short delay
+        Invoke(nameof(Respawn), 1.5f);
+    }
+
+    /// <summary>
+    /// Respawn the bat at a new location and return to idle
+    /// </summary>
+    private void Respawn()
+    {
+        // Move to a random position on screen
+        Vector2 newPos = new Vector2(Random.Range(-7f, 7f), Random.Range(-3f, 3f));
+        transform.position = newPos;
+
+        // Show it again
+        gameObject.SetActive(true);
+
+        // Reset animation to Idle
+        animator.Play("Idle");
+    }
+
 }
