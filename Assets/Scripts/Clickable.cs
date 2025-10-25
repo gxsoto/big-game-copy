@@ -11,7 +11,13 @@ public class Clickable : MonoBehaviour
     //
     // See an example in `ClickTracker.cs`, which is on a UI
     // object titled `Tracker Text (TMP)`.
-    public static int Clicks = 0;
+    public static int Score = 0;
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     /// <summary>
     /// This function is called when the mouse button clicks
@@ -19,7 +25,8 @@ public class Clickable : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
-        Clicks += 1;  // add one point
+        Score += 1;  // add one point
+        animator.SetTrigger("Die");
     }
 
 }
