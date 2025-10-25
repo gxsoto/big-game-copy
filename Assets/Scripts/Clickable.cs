@@ -65,7 +65,7 @@ public class Clickable : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
-        Score += 1;  // add one point
+        Score += 5;  // add 5 points
         animator.SetTrigger("Die");
     }
 
