@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goodPumpkinPrefab: {fileID: 0}
+  blackPumpkinAttackPrefab: {fileID: 0}
   minX: -8
   maxX: 8
   groundY: -3.5
@@ -251,8 +252,8 @@ Transform:
   m_GameObject: {fileID: 840348582}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.04, y: 0.11, z: 0}
-  m_LocalScale: {x: 0.6844194, y: 0.6844194, z: 3.4220972}
+  m_LocalPosition: {x: -5.4398, y: -0.1817, z: 0}
+  m_LocalScale: {x: 1.0273819, y: 1.0577703, z: 3.4220972}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1142463720}
@@ -497,6 +498,55 @@ PolygonCollider2D:
       - {x: 1.7491671, y: -0.40256783}
       - {x: 1.75, y: 0.22406986}
   m_UseDelaunayMesh: 0
+--- !u!1 &986765856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986765857}
+  - component: {fileID: 986765858}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986765857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986765856}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4094996, y: 0.850883, z: 0.016751757}
+  m_LocalScale: {x: 1.621021, y: 1.7574621, z: 1.7630862}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1142463720}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &986765858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986765856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb24f84eb0c94a119a673c220f16735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goodPumpkinPrefab: {fileID: 2105248055683201877, guid: f9c48123c3abc47eb96952640a25de4e, type: 3}
+  blackPumpkinAttackPrefab: {fileID: 4344549681676977763, guid: 2081287b5228e4f26bfad4eb8b13d0d9, type: 3}
+  minX: -8
+  maxX: 8
+  groundY: -3.5
 --- !u!1 &1142463719
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +579,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 840348584}
+  - {fileID: 986765857}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1142463721
