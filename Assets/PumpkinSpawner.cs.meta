@@ -3,7 +3,10 @@ guid: 7bb24f84eb0c94a119a673c220f16735
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - goodPumpkinPrefab: {fileID: 2105248055683201877, guid: f9c48123c3abc47eb96952640a25de4e, type: 3}
+  - blackPumpkinAttackPrefab: {fileID: 4344549681676977763, guid: 2081287b5228e4f26bfad4eb8b13d0d9, type: 3}
+  - pumpkinHurtPrefab: {fileID: 6363717709846646948, guid: 53d4b79a931ec491ab6dfee1e92ddd01, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
