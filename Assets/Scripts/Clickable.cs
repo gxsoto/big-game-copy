@@ -13,6 +13,7 @@ public class Clickable : MonoBehaviour
     // object titled `Tracker Text (TMP)`.
     public static int Score = 0;
     private Animator animator;
+    public static int BatClicks = 0; // new: counts only bat clicks
 
     private Vector3 originalScale;
 
@@ -65,7 +66,8 @@ public class Clickable : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
-        Score += 5;  // add 5 points
+        Score += 1;  // add 1 point
+        BatClicks += 1;    // increment the bat-click counter
         animator.SetTrigger("Die");
     }
 
