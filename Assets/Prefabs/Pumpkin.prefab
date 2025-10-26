@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 738222036920071676}
   - component: {fileID: 2617491605944757235}
   - component: {fileID: 2390892255505147290}
+  - component: {fileID: 1027523578323856713}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: Untagged
@@ -106,3 +107,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1027523578323856713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105248055683201877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4bfdd10074564f898f75f2a7114e01d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
